@@ -1,0 +1,292 @@
+body {
+    background-color: #eceff1;
+}
+
+.MainMenu {
+    position: fixed;
+    width: 250px;
+    z-index: 999;
+    background: #fff;
+    transform: translateX(-200px);
+    transition: transform 0.5s, box-shadow 0.5s;
+    -webkit-box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0);
+    //transition: ;
+    img {
+        margin-top: 20px;
+        height: 40px;
+        width: 40px;
+        transform: translateX(205px);
+        transition: width 0.5s, height 0.5s, transform 0.5s, margin-top 0.5s;
+    }
+    h6 {
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.1s;
+    }
+    h7 {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 0.8em;
+        opacity: 0;
+        color: #ff8f00;
+        transition: opacity 0.1s;
+    }
+    ul {
+        border-top: 1px #c7c7c7 solid;
+        margin-top: 30px;
+        padding: 20px 15px 0px 15px;
+        li {
+            margin: 5px 0px;
+        }
+    }
+    .LOGOUTBTN {
+        position: absolute;
+        bottom: 20px;
+        left: calc(50% - 100px);
+        width: 200px;
+        margin-top: 30px;
+        padding: 3px 0px 3px 0px;
+        li {
+            margin: 5px 0px;
+        }
+    }
+    &:hover {
+        transform: translateX(0);
+        transition: transform 0.5s, box-shadow 0.5s;
+        -webkit-box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.75);
+        //transition: ;
+        >img {
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            transform: translateX(20px);
+            transition: width 0.5s, height 0.5s, transform 0.5s, margin-top 0.5s;
+        }
+        >h6 {
+            opacity: 1;
+            transition: opacity 0.2s;
+            transition-delay: 0.5s;
+        }
+        >h7 {
+            opacity: 1;
+            transition: opacity 0.2s;
+            transition-delay: 0.5s;
+        }
+    }
+}
+
+#POSAPP {
+    .POSAside {
+        margin-left: 80px !important;
+        position: fixed;
+        .OrderList {
+            min-height: 300px !important;
+            ul {
+                padding: 5px 0px !important;
+                margin: 0 !important;
+                li {
+                    margin: 0 !important;
+                    padding: 0 !important;
+                }
+                li.Ordered {
+                    display: block;
+                }
+                li.Unordered {
+                    display: none;
+                }
+            }
+        }
+        .OrderPrice {
+            margin-bottom: 0px;
+            padding-bottom: 0px !important;
+            ul {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .MenuList {
+        margin-left: 32% !important;
+        .MenuListHead {
+            margin-top: 20px;
+            ul {
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+                li {
+                    display: block;
+                    padding: 10px;
+                    a {
+                        display: block;
+                        line-height: 2.4em;
+                    }
+                }
+            }
+        }
+        .MenuListBody {
+            padding: 0px 0px 0px 30px!important;
+            margin: 0px !important;
+            min-height: 510px;
+            ul {
+                text-align: center;
+                overflow: hidden;
+                li {
+                    margin: 10px 4% 30px 4%;
+                    padding: 0px;
+                    //width: 40px;
+                    display: block;
+                    height: 200px;
+                    overflow: visible;
+                    a {
+                        width: 100%;
+                        color: #333;
+                    }
+                    a.MenuItemButton {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: transparent !important;
+                        box-shadow: none !important;
+                    }
+                    a.MenuItemReduce {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 30px;
+                        height: 30px;
+                        background: #333;
+                        text-align: center;
+                        font-size: 1.3em;
+                    }
+                    .MenuItemTextContainer {
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        height: 50px;
+                    }
+                    .MenuItemName {
+                        margin-top: 5px;
+                        line-height: 25px;
+                        color: #eee;
+                        text-align: left;
+                    }
+                    .MenuItemPrice {
+                        margin-top: 0px;
+                        line-height: 0.4em;
+                        font-size: 0.8em;
+                        text-align: left;
+                        color: #eee;
+                    }
+                    .MenuItemAmount {
+                        font-weight: 700;
+                        font-size: 0.9em;
+                        line-height: 0.6em;
+                        text-align: right;
+                    }
+                    .MenuItemTotal {
+                        font-size: 0.9em;
+                        margin-top: 5px;
+                        display: block !important;
+                    }
+                }
+                li.Ordered {
+                    a {
+                        color: #fff;
+                    }
+                    a.MenuItemReduce {
+                        background: #e53935;
+                        visibility: visible;
+                    }
+                    .MenuItemPrice {
+                        color: #ff8f00;
+                    }
+                    .MenuItemAmount {
+                        visibility: visible;
+                    }
+                    .MenuItemTotal {
+                        visibility: visible;
+                    }
+                    .MenuItemTextContainer {
+                        background: rgba(0, 1, 98, 0.5);
+                    }
+                }
+                li.Unordered {
+                    a.MenuItemReduce {
+                        visibility: hidden;
+                    }
+                    .MenuItemPrice {
+                        //color: #ff8f00;
+                    }
+                    .MenuItemAmount {
+                        visibility: hidden;
+                    }
+                    .MenuItemTotal {
+                        visibility: hidden;
+                    }
+                    .MenuItemTextContainer {
+                        background: rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+        }
+    }
+    .OrderPrice {
+        ul {
+            li {
+                float: left;
+            }
+            .PriceTotal {
+                text-align: right;
+            }
+        }
+    }
+}
+
+#LOGINAPP {
+    .LoginContainer {
+        position: absolute;
+        width: 400px;
+        min-height: 400px;
+        left: calc(50% - 200px);
+        top: calc(50% - 250px);
+        padding: 30px 10px;
+        .UserLogo {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+#LISTMENUAPP {
+    .ListMenuContainer {
+        padding: 30px 10px;
+        .ListMenuContent {
+            ul {
+                li {
+                    margin-left: 3%;
+                    margin-right: 3%;
+                    padding: 10px 10px;
+                    .MenuImage {
+                        margin-top: 7px;
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .MenuName {
+                        font-size: 0.9em;
+                        line-height: 0.7em;
+                    }
+                    .MenuPrice {
+                        font-size: 0.8em;
+                        color: cornflowerblue;
+                    }
+                }
+            }
+        }
+    }
+}

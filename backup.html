@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    <div class="row">
+        <header class="col s12">
+        </header>
+        <aside class="col s12 m3 l3 row card">
+            <div class="OrderSummary col s12">
+                <h4>Order Summary</h4>
+            </div>
+            <div class="OrderList col s12">
+                <ul class="row">
+                    <li class="col s12" data-orderedmenu="ayambakar">
+                        <ul class="row">
+                            <li class="col s1">2</li>
+                            <li class="col s7">Ayam Bakar</li>
+                            <li class="col s3">Rp22.000</li>
+                        </ul>
+                    </li>
+                    <li class="col s12">
+                        <ul class="row">
+                            <li class="col s1">3</li>
+                            <li class="col s7">Ayam Bakar, Lalap, Kremes, Sambal</li>
+                            <li class="col s3">Rp34.500</li>
+                        </ul>
+                    </li>
+                    <li class="col s12">
+                        <ul class="row">
+                            <li class="col s1">1</li>
+                            <li class="col s7">Paket Ayam Goreng</li>
+                            <li class="col s3">Rp17.500</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="row OrderPrice col s12">
+                <div class="col s6 PriceSubtotal">
+                    <ul class="row">
+                        <li class="col s12">$30.00</li>
+                        <li class="col s12">Subtotal</li>
+                    </ul>
+                </div>
+                <div class="col s6 PriceTotal">
+                    <ul class="row">
+                        <li class="col s12">$33.00</li>
+                        <li class="col s12">Total</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row col s12">
+                <form>
+                    <input type="number">
+                    <input type="button" value="Hitung" class="waves-effect waves-light btn" style="width:100%;">
+                </form>
+            </div>
+        </aside>
+        <main class="MenuList col s12 m8 l8 row card">
+            <div class="MenuListHead col s12">
+                <ul>
+                <!--
+                    <li><a class="waves-effect waves-light btn" data-headbtn="AyamBakarBtn">Ayam Bakar</a></li>
+                    <li><a class="waves-effect waves-light btn" data-headbtn="PaketNasiBtn">Paket Nasi</a></li>
+                    <li><a class="waves-effect waves-light btn" data-headbtn="PaketHematBtn">Paket Hemat</a></li>
+                -->
+                </ul>
+            </div>
+            <div class="MenuListBody col s12 row">
+                <ul>
+                <!--
+                    <li class="col s3 card row  AyamBakar Ordered">
+                        <a class="MenuItemButton waves-effect waves-light btn"data-menuitem="ayambakar">
+                            <h7 class="MenuItemName col s12 center">Ayam Bakar</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 11.000</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 22.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn" data-menuitemreduce="ayambakar">-</a>
+                    </li>
+                    <li class="col s3 card row AyamBakar Unordered">
+                        <a class="MenuItemButton waves-effect waves-light btn" data-menuitem="ayambakarlalap">
+                            <h7 class="MenuItemName col s12 center">Ayam Bakar + Lalap + Kremes + Sambal</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 11.500</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="ayambakarlalap">-</a>
+                    </li>
+                    <li class="col s3 card row PaketNasi Unordered" style="display:none;">
+                        <a class="MenuItemButton waves-effect waves-light btn" data-menuitem="nasiayamgoreng">
+                            <h7 class="MenuItemName col s12 center">Paket Ayam Goreng</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 17.500</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="nasiayamgoreng">-</a>
+                    </li>
+                    <li class="col s3 card row PaketNasi Unordered" style="display:none;">
+                        <a class="MenuItemButton waves-effect waves-light btn"  data-menuitem="nasiayambakar">
+                            <h7 class="MenuItemName col s12 center">Paket Ayam Bakar</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 18.500</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="nasiayambakar">-</a>
+                    </li>
+                    <li class="col s3 card row PaketNasi Unordered" style="display:none;">
+                        <a class="MenuItemButton waves-effect waves-light btn" data-menuitem="nasibebekgoreng">
+                            <h7 class="MenuItemName col s12 center">Paket Bebek Goreng</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 23.500</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="nasibebekgoreng">-</a>
+                    </li>
+                    <li class="col s3 card row PaketNasi Unordered" style="display:none;">
+                        <a class="MenuItemButton waves-effect waves-light btn" data-menuitem="nasibebekbakar">
+                            <h7 class="MenuItemName col s12 center">Paket Bebek Bakar</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 24.500</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="nasibebekbakar">-</a>
+                    </li>
+                    <li class="col s3 card row PaketNasi Unordered" style="display:none;">
+                        <a class="MenuItemButton waves-effect waves-light btn" data-menuitem="nasibandengpresto">
+                            <h7 class="MenuItemName col s12 center">Paket Bandeng Presto</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 18.500</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="nasibandengpresto">-</a>
+                    </li>
+                    <li class="col s3 card row PaketNasi Unordered" style="display:none;">
+                        <a class="MenuItemButton waves-effect waves-light btn" data-menuitem="nasinilagoreng">
+                            <h7 class="MenuItemName col s12 center">Paket Nila Goreng</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 18.500</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="nasinilagoreng">-</a>
+                    </li>
+                    <li class="col s3 card row PaketHemat Unordered" style="display:none;">
+                        <a class="MenuItemButton waves-effect waves-light btn" data-menuitem="hemat1">
+                            <h7 class="MenuItemName col s12 center">Paket Hemat 1</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 10.000</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="hemat1">-</a>
+                    </li>
+                    <li class="col s3 card row PaketHemat Unordered" style="display:none;">
+                        <a class="MenuItemButton waves-effect waves-light btn" data-menuitem="hemat2">
+                            <h7 class="MenuItemName col s12 center">Paket Hemat 2</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 11.000</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="hemat2">-</a>
+                    </li>
+                    <li class="col s3 card row PaketHemat Unordered" style="display:none;">
+                        <a class="MenuItemButton waves-effect waves-light btn" data-menuitem="hemat3">
+                            <h7 class="MenuItemName col s12 center">Paket Hemat 3</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 13.000</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="hemat3">-</a>
+                    </li>
+                    <li class="col s3 card row PaketHemat Unordered" style="display:none;">
+                        <a class="MenuItemButton waves-effect waves-light btn" data-menuitem="hemat4">
+                            <h7 class="MenuItemName col s12 center">Paket Hemat 4</h7>
+                            <h8 class="MenuItemPrice col s12 center">Rp 15.000</h8>
+                            <h9 class="MenuItemAmount col s12 center">x2</h9>
+                            <h8 class="MenuItemTotal col s12 center">Rp 200.000</h8>
+                        </a>
+                        <a class="MenuItemReduce waves-effect waves-light btn "data-menuitemreduce="hemat4">-</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </main>
+    </div>
+  <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+    <script type="text/javascript" src="js/bin/data.js"></script>
+    <script type="text/javascript" src="js/bin/main.js"></script>
+</body>
+</html>

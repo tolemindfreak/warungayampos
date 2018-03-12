@@ -1,0 +1,214 @@
+body {
+  background-color: #eceff1; }
+
+.MainMenu {
+  position: fixed;
+  width: 250px;
+  z-index: 999;
+  background: #fff;
+  transform: translateX(-200px);
+  transition: transform 0.5s , box-shadow 0.5s;
+  -webkit-box-shadow: 0px 0px 14px -2px transparent;
+  -moz-box-shadow: 0px 0px 14px -2px transparent;
+  box-shadow: 0px 0px 14px -2px transparent; }
+  .MainMenu img {
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+    transform: translateX(205px);
+    transition: width 0.5s,height 0.5s,transform 0.5s,margin-top 0.5s; }
+  .MainMenu h6 {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.1s; }
+  .MainMenu h7 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+    opacity: 0;
+    color: #ff8f00;
+    transition: opacity 0.1s; }
+  .MainMenu ul {
+    border-top: 1px #c7c7c7 solid;
+    margin-top: 30px;
+    padding: 20px 15px 0px 15px; }
+    .MainMenu ul li {
+      margin: 5px 0px; }
+  .MainMenu .LOGOUTBTN {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    width: 200px;
+    margin-top: 30px;
+    padding: 3px 0px 3px 0px; }
+    .MainMenu .LOGOUTBTN li {
+      margin: 5px 0px; }
+  .MainMenu:hover {
+    transform: translateX(0);
+    transition: transform 0.5s , box-shadow 0.5s;
+    -webkit-box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.75); }
+    .MainMenu:hover > img {
+      margin-top: 30px;
+      width: 200px;
+      height: 200px;
+      transform: translateX(20px);
+      transition: width 0.5s,height 0.5s, transform 0.5s,margin-top 0.5s; }
+    .MainMenu:hover > h6 {
+      opacity: 1;
+      transition: opacity 0.2s;
+      transition-delay: 0.5s; }
+    .MainMenu:hover > h7 {
+      opacity: 1;
+      transition: opacity 0.2s;
+      transition-delay: 0.5s; }
+
+#POSAPP .POSAside {
+  margin-left: 80px !important;
+  position: fixed; }
+  #POSAPP .POSAside .OrderList {
+    min-height: 300px !important; }
+    #POSAPP .POSAside .OrderList ul {
+      padding: 5px 0px !important;
+      margin: 0 !important; }
+      #POSAPP .POSAside .OrderList ul li {
+        margin: 0 !important;
+        padding: 0 !important; }
+      #POSAPP .POSAside .OrderList ul li.Ordered {
+        display: block; }
+      #POSAPP .POSAside .OrderList ul li.Unordered {
+        display: none; }
+  #POSAPP .POSAside .OrderPrice {
+    margin-bottom: 0px;
+    padding-bottom: 0px !important; }
+    #POSAPP .POSAside .OrderPrice ul {
+      margin-bottom: 0px; }
+#POSAPP .MenuList {
+  margin-left: 32% !important; }
+  #POSAPP .MenuList .MenuListHead {
+    margin-top: 20px; }
+    #POSAPP .MenuList .MenuListHead ul {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between; }
+      #POSAPP .MenuList .MenuListHead ul li {
+        display: block;
+        padding: 10px; }
+        #POSAPP .MenuList .MenuListHead ul li a {
+          display: block;
+          line-height: 2.4em; }
+  #POSAPP .MenuList .MenuListBody {
+    padding: 0px 0px 0px 30px !important;
+    margin: 0px !important;
+    min-height: 510px; }
+    #POSAPP .MenuList .MenuListBody ul {
+      text-align: center;
+      overflow: hidden; }
+      #POSAPP .MenuList .MenuListBody ul li {
+        margin: 10px 4% 30px 4%;
+        padding: 0px;
+        display: block;
+        height: 200px;
+        overflow: visible; }
+        #POSAPP .MenuList .MenuListBody ul li a {
+          width: 100%;
+          color: #333; }
+        #POSAPP .MenuList .MenuListBody ul li a.MenuItemButton {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: transparent !important;
+          box-shadow: none !important; }
+        #POSAPP .MenuList .MenuListBody ul li a.MenuItemReduce {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 30px;
+          height: 30px;
+          background: #333;
+          text-align: center;
+          font-size: 1.3em; }
+        #POSAPP .MenuList .MenuListBody ul li .MenuItemTextContainer {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          margin: 0px;
+          padding: 0px;
+          height: 50px; }
+        #POSAPP .MenuList .MenuListBody ul li .MenuItemName {
+          margin-top: 5px;
+          line-height: 25px;
+          color: #eee;
+          text-align: left; }
+        #POSAPP .MenuList .MenuListBody ul li .MenuItemPrice {
+          margin-top: 0px;
+          line-height: 0.4em;
+          font-size: 0.8em;
+          text-align: left;
+          color: #eee; }
+        #POSAPP .MenuList .MenuListBody ul li .MenuItemAmount {
+          font-weight: 700;
+          font-size: 0.9em;
+          line-height: 0.6em;
+          text-align: right; }
+        #POSAPP .MenuList .MenuListBody ul li .MenuItemTotal {
+          font-size: 0.9em;
+          margin-top: 5px;
+          display: block !important; }
+      #POSAPP .MenuList .MenuListBody ul li.Ordered a {
+        color: #fff; }
+      #POSAPP .MenuList .MenuListBody ul li.Ordered a.MenuItemReduce {
+        background: #e53935;
+        visibility: visible; }
+      #POSAPP .MenuList .MenuListBody ul li.Ordered .MenuItemPrice {
+        color: #ff8f00; }
+      #POSAPP .MenuList .MenuListBody ul li.Ordered .MenuItemAmount {
+        visibility: visible; }
+      #POSAPP .MenuList .MenuListBody ul li.Ordered .MenuItemTotal {
+        visibility: visible; }
+      #POSAPP .MenuList .MenuListBody ul li.Ordered .MenuItemTextContainer {
+        background: rgba(0, 1, 98, 0.5); }
+      #POSAPP .MenuList .MenuListBody ul li.Unordered a.MenuItemReduce {
+        visibility: hidden; }
+      #POSAPP .MenuList .MenuListBody ul li.Unordered .MenuItemAmount {
+        visibility: hidden; }
+      #POSAPP .MenuList .MenuListBody ul li.Unordered .MenuItemTotal {
+        visibility: hidden; }
+      #POSAPP .MenuList .MenuListBody ul li.Unordered .MenuItemTextContainer {
+        background: rgba(0, 0, 0, 0.5); }
+#POSAPP .OrderPrice ul li {
+  float: left; }
+#POSAPP .OrderPrice ul .PriceTotal {
+  text-align: right; }
+
+#LOGINAPP .LoginContainer {
+  position: absolute;
+  width: 400px;
+  min-height: 400px;
+  left: calc(50% - 200px);
+  top: calc(50% - 250px);
+  padding: 30px 10px; }
+  #LOGINAPP .LoginContainer .UserLogo {
+    width: 200px;
+    height: 200px; }
+
+#LISTMENUAPP .ListMenuContainer {
+  padding: 30px 10px; }
+  #LISTMENUAPP .ListMenuContainer .ListMenuContent ul li {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 10px 10px; }
+    #LISTMENUAPP .ListMenuContainer .ListMenuContent ul li .MenuImage {
+      margin-top: 7px;
+      width: 40px;
+      height: 40px; }
+    #LISTMENUAPP .ListMenuContainer .ListMenuContent ul li .MenuName {
+      font-size: 0.9em;
+      line-height: 0.7em; }
+    #LISTMENUAPP .ListMenuContainer .ListMenuContent ul li .MenuPrice {
+      font-size: 0.8em;
+      color: cornflowerblue; }
+
+/*# sourceMappingURL=style.css.map */

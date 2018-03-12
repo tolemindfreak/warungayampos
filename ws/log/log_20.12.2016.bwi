@@ -1,0 +1,4 @@
+User	: ::1 - December 20, 2016, 12:08:23 am
+Request: Query Db
+Message: Could not query database!  =>  Duplicate entry '2' for key 'PRIMARY'
+-------------------------------------------------------------------

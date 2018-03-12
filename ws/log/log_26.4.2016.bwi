@@ -1,0 +1,16 @@
+User	: 172.16.20.143 - April 26, 2016, 10:14:59 am
+Request: app=pelayaran&module=pelayaran&action=readTransaksiByNotrans
+Message: Data Found
+-------------------------------------------------------------------
+User	: 172.16.20.143 - April 26, 2016, 10:35:55 am
+Request: app=pelayaran&module=pelayaran&action=readTransaksiByNotrans
+Message: Data Found
+-------------------------------------------------------------------
+User	: 172.16.20.143 - April 26, 2016, 10:41:01 am
+Request: app=pelayaran&module=pelayaran&action=readTransaksiByNotrans
+Message: Data Found
+-------------------------------------------------------------------
+User	: 172.16.20.143 - April 26, 2016, 10:41:25 am
+Request: app=pelayaran&module=pelayaran&action=readTransaksiByNotrans
+Message: Data Found
+-------------------------------------------------------------------
